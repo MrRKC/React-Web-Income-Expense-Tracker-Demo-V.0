@@ -1,0 +1,276 @@
+.add-container {
+    width: 100%;
+    margin: 10px;
+    max-width: 100%;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+  
+.add-container input[type='text'],
+.add-container input[type='number'] {
+    border: 2px solid #dedede;
+    border-radius: 10px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: -45px;
+}
+
+.btn-ANT {
+    cursor: pointer;
+    background-color: #05d5ff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #fff;
+    border: 0;
+    font-size: 17px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 60%;
+    display: block;
+    margin-top: 0;
+    border-radius: 5px;
+}
+
+.btn-ANT:hover {
+    background-color: #0fa2c0;
+    transition: all 600ms ease;
+}   
+
+.btn-cancel {
+    cursor: pointer;
+    background-color: #ff3116;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);;
+    color: #fff;
+    border: 0;
+    font-size: 17px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 60%;
+    display: block;
+    border-radius: 5px;
+    margin-top: -5px;
+}
+
+.btn-cancel:hover {
+    background-color: #cd1800;
+    transition: all 600ms ease;
+} 
+
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.select select{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.TransSelect-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.TransSelect select {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+.Transaction {
+    width: 100%;
+    margin: 0;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+  
+.list li {
+    font-size: 20px;
+    background-color: #fff;
+    box-shadow: 0 0.5px 20px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    color: #333;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    margin: 5px 0;
+    width: 450px;
+    border-right: 1.5px solid #747272;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+  
+.list li.plus {
+    border-right: 6px solid #2ecc71;
+}
+  
+.list li.minus {
+    border-right: 6px solid #c0392b;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #e12712;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(758%, -195%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+.edit-btn {
+    cursor: pointer;
+    background-color: #00fc00;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(193px, -195%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.list li:hover .edit-btn {
+    opacity: 1;
+}
+
+.done-btn {
+    cursor: pointer;
+    background-color: #00fc00;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 4.5px 4.5px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(193px, -240%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.list li:hover .done-btn {
+    opacity: 1;
+}
+
+.cancel-btn {
+    cursor: pointer;
+    background-color: #e12712;
+    border: 0;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 25px;
+    line-height: 20px;
+    padding: 3px 3px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(228px, -240%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+
+}
+
+.list li:hover .cancel-btn {
+    opacity: 1;
+}
+
+.list .task-container {
+    min-width: 30%;
+    margin-right: 20px;
+}
+
+.list .payment-cotainer {
+    min-width: 30%;
+    margin-right: 20px;
+}
+
+.list .amount-container {
+    min-width: 30%;
+}
+
+
+
+/* .form-control {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    border: 1px solid #e6e8e9; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    padding: 10px 20px;  
+    margin-bottom: 10px;  
+    border-right: #cd1800;
+}
+
+.task-container {
+    min-width: 30%;
+}
+
+.payment-container {
+    min-width: 30%;
+    margin-right: 10px;
+} */
+
+
+
+
+
+
+
+
+
+
+
