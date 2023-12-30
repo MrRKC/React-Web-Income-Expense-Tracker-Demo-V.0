@@ -33,6 +33,8 @@ const AddTransDataView = (props) => {
         setToggle(false);
     }
 
+    const blockInvalidChar = (e) => ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
+
     return (
         toggle ? (
             <div className="add-container">
@@ -42,12 +44,12 @@ const AddTransDataView = (props) => {
                 <div className="input-container">
                     <div>
                         <label htmlFor='text'>Text</label>
-                        <input type="text" value={task} onChange={(e) => setTask(e.target.value)} placeholder="Enter text..." />
+                        <input type="text" value={task} onChange={(e) => setTask(e.target.value)} placeholder="Enter text..."/>
                     </div>
 
                     <div>
-                        <label htmlFor='number'>Amount</label>
-                        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} min="0" max="1000000000" placeholder="Enter Amount..."/>
+                        <label>Amount</label>
+                        <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} min="0" placeholder="Enter Amount..." onKeyDown={blockInvalidChar}/>
                     </div>
 
                     <div className="select">

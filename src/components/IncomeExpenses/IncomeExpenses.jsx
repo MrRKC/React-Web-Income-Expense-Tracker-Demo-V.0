@@ -25,6 +25,8 @@ const IncomeExpenses = (props) => {
         currency: 'THB'
     }).format(expenses).replace("฿","");
 
+    console.log(expensesTHB)
+
     return (
         <div className='IncomeExpenses'>
             <div>

@@ -45,6 +45,8 @@ const TransactionItem = (props) => {
         currency: 'THB'
     }).format(amount).replace("฿","");
 
+    const blockInvalidChar = (e) => ["e", "E", "+", "-"].includes(e.key) && e.preventDefault();
+
     if (isEdit) {
     return (
         <ul className="list">
@@ -53,7 +55,7 @@ const TransactionItem = (props) => {
                     <input type="text" value={curTask} onChange={e => setCurTask(e.target.value)}/>
                 </span> 
 
-                <span><input type="number" value={curAmount} onChange={e => setCurAmount(e.target.value)}/></span>
+                <span><input type="number" value={curAmount} onChange={e => setCurAmount(e.target.value)} onKeyDown={blockInvalidChar}/></span>
 
                 <span>
                     <select value={curPayment} onChange={e => setCurPayment(e.target.value)}>
