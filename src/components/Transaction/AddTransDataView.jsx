@@ -86,13 +86,15 @@ const AddTransDataView = (props) => {
                     </div>
                     
                         <div className="btn">
-                            <button className="btn-ANT" onClick={clickHandler}>Add Transtion</button>
+                            <button className="btn-ANT" onClick={clickHandler}>Add 
+                        Transaction</button>
                         </div>      
                 </div>
             </div>
         ) : (
             <div className="btn">
-                <button className="btn-ANT" onClick={() => setToggle(true)}>Add New Transtion</button>
+                <button className="btn-ANT" onClick={() => setToggle(true)}>Add New 
+            Transaction</button>
             </div>
         )
         
